@@ -479,7 +479,7 @@ ros2 param get /mynode_node_cpp name
 
 
 
-![img](https://gitee.com/zhangchenxuv/images/raw/main/image-20240922200739498.png)
+![img](images/image-20240922200739498.png)
 
 
 
@@ -603,7 +603,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240922203710421.png" alt="image-20240922203710421" style="zoom:67%;" />
+<img src="images/image-20240922203710421.png" alt="image-20240922203710421" style="zoom:67%;" />
 
 
 
@@ -691,7 +691,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240922212027117.png" alt="image-20240922212027117" style="zoom:67%;" />
+<img src="images/image-20240922212027117.png" alt="image-20240922212027117" style="zoom:67%;" />
 
 
 
@@ -699,11 +699,11 @@ int main(int argc, char const *argv[])
 
 直接使用``this->undeclare_parameter("name_my");``会抛出异常
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240922212211205.png" alt="image-20240922212211205" style="zoom:67%;" />
+<img src="images/image-20240922212211205.png" alt="image-20240922212211205" style="zoom:67%;" />
 
 但如果参数是通过``set_parameter``设置的参数，则可以删除
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240922212509090.png" alt="image-20240922212509090" style="zoom:67%;" />
+<img src="images/image-20240922212509090.png" alt="image-20240922212509090" style="zoom:67%;" />
 
 
 
@@ -833,7 +833,7 @@ tf(TransForm Frame)是指坐标变换，它允许用户随时间跟踪多个坐�
 
 坐标变换库分为``tf``和升级后的``tf2``两个库，建议使用``tf2``库
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240913223305742.png" alt="image-20240913223305742" style="zoom:50%;" />
+<img src="images/image-20240913223305742.png" alt="image-20240913223305742" style="zoom:50%;" />
 
 注意：坐标变换时，需要参考消息数据中的时间戳。需要保证参与变换的两个坐标帧的时间差在一定范围内，否则可能会导致误差偏大。
 
@@ -869,7 +869,7 @@ pip3 install transforms3d
 ros2 interface show geometry_msgs/msg/TransformStamped
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240913225404986.png" alt="image-20240913225404986" style="zoom:67%;" />
+<img src="images/image-20240913225404986.png" alt="image-20240913225404986" style="zoom:67%;" />
 
 ```shell
 ros2 interface show geometry_msgs/msg/PointStamped
@@ -877,7 +877,7 @@ ros2 interface show geometry_msgs/msg/PointStamped
 
 
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240913231140030.png" alt="image-20240913231140030" style="zoom:67%;" />
+<img src="images/image-20240913231140030.png" alt="image-20240913231140030" style="zoom:67%;" />
 
 
 
@@ -943,7 +943,7 @@ zhangchenxu@chengxz-pc:~$ export QT_ENABLE_HIGHDPI_SCALING=0
 zhangchenxu@chengxz-pc:~$ rviz2
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240914223232789.png" alt="image-20240914223232789" style="zoom: 50%;" />
+<img src="images/image-20240914223232789.png" alt="image-20240914223232789" style="zoom: 50%;" />
 
 设置一个偏移量
 
@@ -953,7 +953,7 @@ ros2 run tf2_ros static_transform_publisher --frame-id base_link --child-frame-i
 
 
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240914223454434.png" alt="image-20240914223454434" style="zoom:50%;" />
+<img src="images/image-20240914223454434.png" alt="image-20240914223454434" style="zoom:50%;" />
 
 **静态广播器实现**
 
@@ -1090,7 +1090,7 @@ ros2 run cpp03_tf_broadcaster demo01_static_tf_bro 0.4 0.0 0.2 0 0 0 base_link l
 
 打开rviz2
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240915000418494.png" alt="image-20240915000418494" style="zoom:50%;" />
+<img src="images/image-20240915000418494.png" alt="image-20240915000418494" style="zoom:50%;" />
 
 #### 动态广播器
 
@@ -1164,7 +1164,7 @@ int main(int argc, char const *argv[])
 
 
 
-![image-20240915173858681](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240915173858681.png)
+![image-20240915173858681](images/image-20240915173858681.png)
 
 
 
@@ -1243,7 +1243,7 @@ zhangchenxu@chengxz-pc:~/Documents/ws_learn$ ros2 run tf2_ros static_transform_p
 
 开启rviz2
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240915235346285.png" alt="image-20240915235346285" style="zoom:67%;" />
+<img src="images/image-20240915235346285.png" alt="image-20240915235346285" style="zoom:67%;" />
 
 
 
@@ -1335,13 +1335,13 @@ ros2 run tf2_ros static_transform_publisher --frame-id base_link --child-frame-i
 ros2 run cpp04_tf_listener demo01_tf_listener
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240916174738400.png" alt="image-20240916174738400" style="zoom:67%;" />
+<img src="images/image-20240916174738400.png" alt="image-20240916174738400" style="zoom:67%;" />
 
 
 
 #### 坐标点变换
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240916195911792.png" alt="image-20240916195911792" style="zoom:67%;" />
+<img src="images/image-20240916195911792.png" alt="image-20240916195911792" style="zoom:67%;" />
 
 ```cpp
 // 需求：laser到base_link的坐标系相对关系，然后发布point到laser的坐标，求解point到base_link的坐标
@@ -1447,7 +1447,7 @@ zhangchenxu@chengxz-pc:~/Documents/ws_learn$ ros2 run cpp04_tf_listener demo02_m
 
 可得到如下结果
 
-![image-20240916220730083](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240916220730083.png)
+![image-20240916220730083](images/image-20240916220730083.png)
 
 
 
@@ -1604,7 +1604,7 @@ def generate_launch_description():
 
 使用``from ament_index_python.packages import get_package_share_directory``使可以直接访问share下的目录
 
-![image-20241022181405826](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241022181405826.png)
+![image-20241022181405826](images/image-20241022181405826.png)
 
 之后编译并启动
 
@@ -1615,7 +1615,7 @@ export QT_ENABLE_HIGHDPI_SCALING=0
 ros2 launch cpp06_urdf display.launch.py 
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240903190313935.png" alt="image-20240903190313935" style="zoom: 25%;" />
+<img src="images/image-20240903190313935.png" alt="image-20240903190313935" style="zoom: 25%;" />
 
 增加插件后进行相应配置，可以展现相应的模型
 
@@ -1711,7 +1711,7 @@ urdf 中为了保证 xml 语法的完整性，使用了 robot 标签作为根标
 
 ##### |--**link**
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240903224336210.png" alt="image-20240903224336210" style="zoom:25%;" />
+<img src="images/image-20240903224336210.png" alt="image-20240903224336210" style="zoom:25%;" />
 
 属性：
 
@@ -1721,33 +1721,33 @@ name（必填）：为连杆命名。
 
 <visual>（可选）：用于描述 link 的可视化属性，可以设置 link 的形状（立方体、球体、圆柱等）。
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240903224730922.png" alt="image-20240903224730922" style="zoom:50%;" />
+<img src="images/image-20240903224730922.png" alt="image-20240903224730922" style="zoom:50%;" />
 
 <collision> ：连杆的碰撞属性.
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240903224905097.png" alt="image-20240903224905097" style="zoom:50%;" />
+<img src="images/image-20240903224905097.png" alt="image-20240903224905097" style="zoom:50%;" />
 
 <Inertial >:连杆的惯性矩阵
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240903224939356.png" alt="image-20240903224939356" style="zoom:50%;" />
+<img src="images/image-20240903224939356.png" alt="image-20240903224939356" style="zoom:50%;" />
 
 语法示例：
 
-![image-20241022233940395](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241022233940395.png)
+![image-20241022233940395](images/image-20241022233940395.png)
 
-![image-20241023000718160](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241023000718160.png)
+![image-20241023000718160](images/image-20241023000718160.png)
 
 
 
 ##### |--**joint**
 
-![image-20241023203803202](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241023203803202.png)
+![image-20241023203803202](images/image-20241023203803202.png)
 
 
 
-![image-20241023203821139](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241023203821139.png)
+![image-20241023203821139](images/image-20241023203821139.png)
 
-![image-20241023203840507](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241023203840507.png)
+![image-20241023203840507](images/image-20241023203840507.png)
 
 
 
@@ -1891,7 +1891,7 @@ ros2 run joint_state_publisher_gui joint_state_publisher_gui
 
 开启一个UI窗口
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241023214704938.png" alt="image-20241023214704938" style="zoom: 33%;" />
+<img src="images/image-20241023214704938.png" alt="image-20241023214704938" style="zoom: 33%;" />
 
 拖动进度条可以实现关节旋转
 
@@ -2072,7 +2072,7 @@ ros2 run joint_state_publisher_gui joint_state_publisher_gui
 
 
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241024001448279.png" alt="image-20241024001448279" style="zoom:50%;" />
+<img src="images/image-20241024001448279.png" alt="image-20241024001448279" style="zoom:50%;" />
 
 **完整建模**
 
@@ -2213,7 +2213,7 @@ ros2 run joint_state_publisher_gui joint_state_publisher_gui
 
 **效果图：**
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241024232309205.png" alt="image-20241024232309205" style="zoom:50%;" />
+<img src="images/image-20241024232309205.png" alt="image-20241024232309205" style="zoom:50%;" />
 
 #### |--URDF优化xacro
 
@@ -2300,7 +2300,7 @@ def generate_launch_description():
 
 会使终端输出时，前面的信息发生变化
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241019221111097.png" alt="image-20241019221111097" style="zoom:50%;" />
+<img src="images/image-20241019221111097.png" alt="image-20241019221111097" style="zoom:50%;" />
 
 **ros_arguments**:
 
@@ -4212,7 +4212,7 @@ int main() {
 
 #### 继承
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240831212350999.png" alt="image-20240831212350999" style="zoom:50%;" />
+<img src="images/image-20240831212350999.png" alt="image-20240831212350999" style="zoom:50%;" />
 
 定义这些类时，下级别的成员除了拥有上一级的共性，还有自己的特性，这个时候我们就可以考虑利用继承的技术，减少重复代码。
 
@@ -4421,7 +4421,7 @@ int main() {
 * 保护继承
 * 私有继承
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240831215727196.png" alt="image-20240831215727196" style="zoom:50%;" />
+<img src="images/image-20240831215727196.png" alt="image-20240831215727196" style="zoom:50%;" />
 
 ```cpp
 class Base1
@@ -4541,7 +4541,7 @@ https://github.com/WMGIII/bbot_demo
 
 在工作空间下编译，如果报错
 
-![image-20240926221729008](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240926221729008.png)
+![image-20240926221729008](images/image-20240926221729008.png)
 
 则下载：
 
@@ -4557,11 +4557,11 @@ ros2 launch bbot_description  bbot.launch.py
 
 按照下图配置并加入插件：
 
-![image-20240926224112988](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240926224112988.png)
+![image-20240926224112988](images/image-20240926224112988.png)
 
 可以得到：
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240926224153991.png" alt="image-20240926224153991" style="zoom:50%;" />
+<img src="images/image-20240926224153991.png" alt="image-20240926224153991" style="zoom:50%;" />
 
 **之后使用ros2_contral**框架构建**gazebo**下的模型
 
@@ -4775,11 +4775,11 @@ ros2 control list_hardware_interfaces
 
 可以查看所有的``hardware_interfaces``
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241006181914872.png" alt="image-20241006181914872" style="zoom: 67%;" />
+<img src="images/image-20241006181914872.png" alt="image-20241006181914872" style="zoom: 67%;" />
 
 如果日志中提示：
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241006210854519.png" alt="image-20241006210854519" style="zoom:67%;" />
+<img src="images/image-20241006210854519.png" alt="image-20241006210854519" style="zoom:67%;" />
 
 1. **控制器加载失败**：
 
@@ -4845,7 +4845,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 - `--ros-args`：这个选项后面跟着的是ROS 2参数，这些参数将被传递给节点。
 - `-r /cmd_vel:=/diff_drive/cmd_vel_unstamped`：这是重映射参数，它将节点内部的主题`/cmd_vel`重映射为`/diff_drive/cmd_vel_unstamped`。这意味着节点将监听`/diff_drive/cmd_vel_unstamped`主题上的订阅者，并将键盘输入的命令发布到这个主题上。
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241006212815272.png" alt="image-20241006212815272" style="zoom:50%;" />
+<img src="images/image-20241006212815272.png" alt="image-20241006212815272" style="zoom:50%;" />
 
 - **移动控制**：
   - `u` `i` `o`：分别控制机器人向前、向后和侧向移动。
@@ -4997,13 +4997,13 @@ ros2 launch controlko_bringup rrbot_sim_gazebo_classic.launch.py
 
 可能
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007171340397.png" alt="image-20241007171340397" style="zoom: 67%;" />
+<img src="images/image-20241007171340397.png" alt="image-20241007171340397" style="zoom: 67%;" />
 
 ```bash
 sudo apt-get install ros-kinetic-joint-trajectory-controller
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007172020182.png" alt="image-20241007172020182" style="zoom:50%;" />
+<img src="images/image-20241007172020182.png" alt="image-20241007172020182" style="zoom:50%;" />
 
 之后运行
 
@@ -5013,7 +5013,7 @@ ros2 launch controlko_bringup test_joint_trajectory_controller.launch.py
 
 如果报错
 
-![image-20241007172102489](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007172102489.png)
+![image-20241007172102489](images/image-20241007172102489.png)
 
 安装：
 
@@ -5023,15 +5023,15 @@ sudo apt install ros-humble-ros2-controllers-test-nodes
 
 模型开始运动：
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007172241820.png" alt="image-20241007172241820" style="zoom: 50%;" />
+<img src="images/image-20241007172241820.png" alt="image-20241007172241820" style="zoom: 50%;" />
 
 第二个即是创建控制位置的控制器：
 
-![image-20241007172528985](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007172528985.png)
+![image-20241007172528985](images/image-20241007172528985.png)
 
 可在下图中看到``command interfaces``中有速度和位置，``interfaces``中有力、位置和速度
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241007172631700.png" alt="image-20241007172631700" style="zoom:80%;" />
+<img src="images/image-20241007172631700.png" alt="image-20241007172631700" style="zoom:80%;" />
 
 ## 6-5 Writing a new hardware interface
 
@@ -5057,7 +5057,7 @@ zhangchenxu@chengxz-pc:~/Documents/ros2_control/rrbot_ws/src$ ros2 pkg create my
 https://rtw.stoglrobotics.de/master/use-cases/ros2_control/setup_controller.html
 ```
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241009174541308.png" alt="image-20241009174541308" style="zoom:67%;" />
+<img src="images/image-20241009174541308.png" alt="image-20241009174541308" style="zoom:67%;" />
 
 下面这个命令是生成hardware interface模板的命令
 
@@ -5879,7 +5879,7 @@ Ip地址也分段，如何判断访问的目标ip是否同网段？看网络位�
 
 ​								路由功能：帮助不同网段进行数据转发功能
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240910232345249.png" alt="image-20240910232345249" style="zoom:33%;" />
+<img src="images/image-20240910232345249.png" alt="image-20240910232345249" style="zoom:33%;" />
 
 ``DNS``：
 
@@ -5897,17 +5897,17 @@ DNS可以实现通过域名来访问服务器
 
 首先将一台设备的Ip地址设置成如下形式：
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912231526778.png" alt="image-20240912231526778" style="zoom: 67%;" />
+<img src="images/image-20240912231526778.png" alt="image-20240912231526778" style="zoom: 67%;" />
 
 另一台设备的Ip地址需按照其网络位及子网掩码进行相同配置
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912231637716.png" alt="image-20240912231637716" style="zoom: 67%;" />
+<img src="images/image-20240912231637716.png" alt="image-20240912231637716" style="zoom: 67%;" />
 
 此时两机间便可以进行通讯
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912232303844.png" alt="image-20240912232303844" style="zoom: 67%;" />
+<img src="images/image-20240912232303844.png" alt="image-20240912232303844" style="zoom: 67%;" />
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912232325576.png" alt="image-20240912232325576" style="zoom: 67%;" />
+<img src="images/image-20240912232325576.png" alt="image-20240912232325576" style="zoom: 67%;" />
 
 如果在同一局域网中存在多台运行ROS2的设备，且并不希望计算机之间存在干扰，需要通过配置各自的域ID实现
 
@@ -5915,9 +5915,9 @@ DNS可以实现通过域名来访问服务器
 
 通过DOMAIN ID实现隔离：
 
-![image-20240912232930077](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912232930077.png)
+![image-20240912232930077](images/image-20240912232930077.png)
 
-![image-20240912232945504](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912232945504.png)
+![image-20240912232945504](images/image-20240912232945504.png)
 
 因此需要配置
 
@@ -6254,11 +6254,11 @@ sudo make install
 
 之后将``fdilink_ahrs_ROS2``移动至工作空间的``src``下，在工作空间下进行编译
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912185826682.png" alt="image-20240912185826682" style="zoom:50%;" />
+<img src="images/image-20240912185826682.png" alt="image-20240912185826682" style="zoom:50%;" />
 
 直接运行可能会出现以下问题
 
-![image-20240912205207285](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912205207285.png)
+![image-20240912205207285](images/image-20240912205207285.png)
 
 这是由于没有固定串口号导致的问题
 
@@ -6268,14 +6268,14 @@ sudo make install
 
 在 Windows 中需要把 WHEELTEC N 系列上的 CP2102 芯片串口号改为 0003，用 USB 线把惯导模块连接电脑，通过 CP21xxCustomizationUtility 这个 windows上的软件修改并固定,操作如下图：
 
-![image-20240912205633862](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912205633862.png)
+![image-20240912205633862](images/image-20240912205633862.png)
 
 2、设备创建别名
 
 设对应的串口名一般都是会变化的，为了避免手动选择，这里可以通过给USB 设备创建别名的方式解决。
 WHEELTEC 通过脚本文件来为设备创建别名，WHEELTEC N 系列对应的串口号为 0003，对应 ATTRS{serial}=="0003"，脚本文件存放在【资料包\2.ROS_SDK\fdilink_ahrs_ROS1\fdilink_ahrs】文件夹下的 wheeltec_udev.sh 文件中：
 
-![image-20240912205718426](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912205718426.png)
+![image-20240912205718426](images/image-20240912205718426.png)
 
 依次运行以下两个指令：
 
@@ -6284,25 +6284,25 @@ sudo chmod 777 wheeltec_udev.sh
 sudo ./wheeltec_udev.sh
 ```
 
-![image-20240912205825113](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912205825113.png)
+![image-20240912205825113](images/image-20240912205825113.png)
 
 3、检查
 
 把 WHEELTEC N100 模块连接到 ROS 主控，在终端运行：ll /dev 查看设备
 
-![image-20240912205915959](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912205915959.png)
+![image-20240912205915959](images/image-20240912205915959.png)
 
 完成以上操作后重新插拔imu
 
 之后编译
 
-![image-20240912230728189](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912230728189.png)
+![image-20240912230728189](images/image-20240912230728189.png)
 
 可以正常运行。
 
 之后正常通过编译：
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912233802709.png" alt="image-20240912233802709" style="zoom: 67%;" />
+<img src="images/image-20240912233802709.png" alt="image-20240912233802709" style="zoom: 67%;" />
 
 启用``Launch``文件
 
@@ -6311,11 +6311,11 @@ sudo ./wheeltec_udev.sh
 ros2 launch fdilink_ahrs ahrs_driver.launch.py
 ```
 
-![image-20240912235353369](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912235353369.png)
+![image-20240912235353369](images/image-20240912235353369.png)
 
 echo话题查看数据
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240912235723586.png" alt="image-20240912235723586" style="zoom:67%;" />
+<img src="images/image-20240912235723586.png" alt="image-20240912235723586" style="zoom:67%;" />
 
 在新终端执行
 
@@ -6339,7 +6339,7 @@ ros2 topic echo imu
 
 实际订阅并不需要走太多弯路，在提供的``ahrs_driver.cpp``文件中，已经创建好了``imu_pub``发布方
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240917232002743.png" alt="image-20240917232002743" style="zoom:50%;" /><img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240917232038872.png" alt="image-20240917232038872" style="zoom:67%;" />
+<img src="images/image-20240917232002743.png" alt="image-20240917232002743" style="zoom:50%;" /><img src="images/image-20240917232038872.png" alt="image-20240917232038872" style="zoom:67%;" />
 
 话题名称为``imu_topic``,因此只需要订阅这个话题便可以获取IMU的数据
 
@@ -6488,7 +6488,7 @@ ros2 launch fdilink_ahrs ahrs_driver.launch.py
 ros2 run fdilink_ahrs imu_tf_node
 ```
 
-![image-20240917233034192](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240917233034192.png)
+![image-20240917233034192](images/image-20240917233034192.png)
 
 可以正常读数，关于偏航角，其 0 位置为IMU上电时的位置，具体可以参考手册中关于相对和绝对偏航角，以及 y角的设置
 
@@ -6506,9 +6506,9 @@ sudo apt install ros-humble-imu-tools
 
 其中fix frame可以在topic中能看到，具体方式是*ros2 topic echo /imu*，就能看到frame_id，fixed frame替换即可。
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240917233525319.png" alt="image-20240917233525319" style="zoom: 33%;" />
+<img src="images/image-20240917233525319.png" alt="image-20240917233525319" style="zoom: 33%;" />
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240917234025281.png" alt="image-20240917234025281" style="zoom: 33%;" />
+<img src="images/image-20240917234025281.png" alt="image-20240917234025281" style="zoom: 33%;" />
 
 ## 附录七 为IMU的ROS项目设计QT界面
 
@@ -6528,29 +6528,29 @@ sudo apt install ros-humble-imu-tools
 
 新建一个文件夹用来放项目文件
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921144117402.png" alt="image-20240921144117402" style="zoom:67%;" />
+<img src="images/image-20240921144117402.png" alt="image-20240921144117402" style="zoom:67%;" />
 
 注意build system选择colcon
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921144147990.png" alt="image-20240921144147990" style="zoom:67%;" />
+<img src="images/image-20240921144147990.png" alt="image-20240921144147990" style="zoom:67%;" />
 
 右键选中，构建一次，如果没有``src``文件，在过滤树形视图中设置显示空文件夹
 
-![image-20240921144737842](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921144737842.png)
+![image-20240921144737842](images/image-20240921144737842.png)
 
 之后将上文中ROS2项目中``src``目录下的文件均复制到QT项目中，项目结构如下所示
 
-![image-20240921145137655](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921145137655.png)
+![image-20240921145137655](images/image-20240921145137655.png)
 
 此时可以尝试在QT中选中编译，如何之前ROS2的项目没有问题，此处编译也不会出现问题（下图提示没有用到某些变量，再次编译即可消除）
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921145728533.png" alt="image-20240921145728533" style="zoom: 50%;" />
+<img src="images/image-20240921145728533.png" alt="image-20240921145728533" style="zoom: 50%;" />
 
 ### |-7-2 **在QT中创建UI**
 
 在``src``上右键，添加新文件，选Qt设计师界面类->选则MainWindow
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921145949899.png" alt="image-20240921145949899" style="zoom:67%;" />
+<img src="images/image-20240921145949899.png" alt="image-20240921145949899" style="zoom:67%;" />
 
 在``src``目录中手动添加``main.cpp``，其内容如下
 
@@ -6574,15 +6574,15 @@ int main(int argc, char *argv[]) {
 
 删除``ahrs_driver.cpp``中入口
 
-![image-20240921151824797](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921151824797.png)
+![image-20240921151824797](images/image-20240921151824797.png)
 
 由于后续内容用不到以``imu_tf``开头的launch文件和cpp文件，可以删除，CMakelists中也需要排除编译这两个文件，后面会提到这一点
 
-![image-20240921150639521](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921150639521.png)
+![image-20240921150639521](images/image-20240921150639521.png)
 
 此时的文件目录如下：
 
-![image-20240921150929908](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921150929908.png)
+![image-20240921150929908](images/image-20240921150929908.png)
 
 ### |-7-3 **修改CMakeLists.txt**
 
@@ -6744,21 +6744,21 @@ ament_package()
 
 编译运行后会提示需要一个可执行程序
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921152340855.png" alt="image-20240921152340855" style="zoom:67%;" />
+<img src="images/image-20240921152340855.png" alt="image-20240921152340855" style="zoom:67%;" />
 
 从CMakeLists.txt中可知，其生成的install文件在``/lib``中,在执行档中选中对应文件
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921153525638.png" alt="image-20240921153525638" style="zoom:67%;" />
+<img src="images/image-20240921153525638.png" alt="image-20240921153525638" style="zoom:67%;" />
 
 再次运行可以弹出UI窗口
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921153622863.png" alt="image-20240921153622863" style="zoom:67%;" />
+<img src="images/image-20240921153622863.png" alt="image-20240921153622863" style="zoom:67%;" />
 
 ### |-7-4 UI初步设计
 
 如果想达到一个按钮具有按下和释放均有执行，需要勾选属性中``checkable``选项
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921153959685.png" alt="image-20240921153959685" style="zoom:67%;" />
+<img src="images/image-20240921153959685.png" alt="image-20240921153959685" style="zoom:67%;" />
 
 在``mainwindow.h``中添加头文件,同时定义pushbotton，及pushButton的槽函数
 
@@ -6843,7 +6843,7 @@ void MainWindow::On_allSelectBtnSlot()
 
 3、``PI``的定义可能会与一些系统库冲突，如果出现，则将``ahrs_driver.h``中的PI的定义改一下；
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921161019045.png" alt="image-20240921161019045" style="zoom:50%;" />
+<img src="images/image-20240921161019045.png" alt="image-20240921161019045" style="zoom:50%;" />
 
 4、``setText``只能显示字符串，需要转换格式；
 
@@ -7109,7 +7109,7 @@ public:
 
 **效果展示：**
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20240921161529587.png" alt="image-20240921161529587" style="zoom:50%;" />
+<img src="images/image-20240921161529587.png" alt="image-20240921161529587" style="zoom:50%;" />
 
 
 
@@ -7127,11 +7127,11 @@ sudo apt-get install libmodbus-dev
 
 之后编译，肯会遇到以下错误
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241018213750812.png" alt="image-20241018213750812" style="zoom:67%;" />
+<img src="images/image-20241018213750812.png" alt="image-20241018213750812" style="zoom:67%;" />
 
 此时去查找``modbus.h``以及``libmodbus.so``相关文件的位置，之后在``/usr/lib/cmake``创建以下文件夹以及文件
 
-<img src="https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241018214043245.png" alt="image-20241018214043245" style="zoom: 67%;" />
+<img src="images/image-20241018214043245.png" alt="image-20241018214043245" style="zoom: 67%;" />
 
 内容如下，相对应的地址可以根据实际情况进行更改
 
@@ -7185,7 +7185,7 @@ ls /dev
 
 终端命令，确定有几个视频输入
 
-![image-20241118111933460](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118111933460.png)
+![image-20241118111933460](images/image-20241118111933460.png)
 
 可见有四个输入，而我只使用了两个摄像头，所以需要确认有效的输入。
 
@@ -7209,7 +7209,7 @@ ros2 run v4l2_camera v4l2_camera_node --ros-args --remap image_raw:=image_raw/up
 ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:=/dev/video0
 ```
 
-![image-20241118112312956](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118112312956.png)
+![image-20241118112312956](images/image-20241118112312956.png)
 
 以及
 
@@ -7217,11 +7217,11 @@ ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:=/dev/video0
 ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:=/dev/video2 --remap image_raw:=image_raw/upperright_cam
 ```
 
-![image-20241118112403627](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118112403627.png)
+![image-20241118112403627](images/image-20241118112403627.png)
 
 可以在``rqt``工具箱中获取两个话题
 
-![image-20241118112444915](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118112444915.png)
+![image-20241118112444915](images/image-20241118112444915.png)
 
 #### |-10-2-2 获取设备ID
 
@@ -7243,7 +7243,7 @@ udevadm info -a -p /sys/class/video4linux/video0
 
 往下翻到的第一个
 
-![image-20241118112900217](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118112900217.png)
+![image-20241118112900217](images/image-20241118112900217.png)
 
 这个获取方式也可以通过插拔设备，加``lsusb``命令的方式获取
 
@@ -7251,7 +7251,7 @@ udevadm info -a -p /sys/class/video4linux/video0
 
 进入`/etc/udev/rules.d/`文件夹下
 
-![image-20241118113336744](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118113336744.png)
+![image-20241118113336744](images/image-20241118113336744.png)
 
 新建`video.rules`文件，文件内容如下：
 
@@ -7265,7 +7265,7 @@ KERNEL=="video*" , ATTRS{idVendor}== "0bda", ATTRS{idProduct}=="3041", ATTR{inde
 ls /dev/camera*
 ```
 
-![image-20241118115448227](https://gitee.com/zhangchenxuv/images/raw/main/image/image-20241118115448227.png)
+![image-20241118115448227](images/image-20241118115448227.png)
 
 可以找到设备，使用
 
